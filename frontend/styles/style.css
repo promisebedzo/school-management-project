@@ -1,0 +1,82 @@
+.login-wrapper {
+    background-color: var(--bg-main);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box{
+    background-color: var(--bg-card);
+    padding: 0 30px 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    border-top: 5px solid var(--accent-primary);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px var(--shadow);
+}
+
+.logo-box{
+    width: 200px;
+    margin: auto;
+}
+
+.logo-box img{
+    width: 100%;
+}
+
+.input-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 22px;
+    border-radius: 50px;
+    border: 1.5px solid var(--text-s);
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    padding: 0 8px;
+    transform: translateY(-50%);
+    color: var(--text-s);
+    font-size: medium;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+
+.login-button {
+    background-color: var(--brand-navy);
+    color: var(--bg-card);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.login-button:hover {
+
+    background-color: var(--accent-primary);
+}
+
+.input-box input:focus {
+    border: 2px solid var(--brand-navy);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: 1px;
+    font-size: smaller;
+    background-color: var(--bg-card);
+    color: var(--brand-navy);
+    padding-left: 0;
+    padding: 1px 3px;
+}
