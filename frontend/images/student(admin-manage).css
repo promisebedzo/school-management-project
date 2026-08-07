@@ -1,0 +1,107 @@
+body{
+  background-color: grey;
+   font-family: "Inter", sans-serif;
+   width:100%;
+   min-height: 100vh;
+   margin: 0;
+}
+#top-box{
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  background-color:lightblue;
+}
+  .top-class{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+    #topbox-text{
+      padding-left: 5px;
+    }
+      #addstu-box{
+        padding-bottom: 30px;
+        padding-right: 5px;
+      }
+        #toptext-1{
+          font-weight: 600;
+          font-size: 20px;
+          font: bold;
+        }
+          #toptext-2{
+            font-weight: 300;
+            font-size: 15px;
+            color: white;
+          }
+            #addstudent-button{
+              width: 15vw;
+              height: 50px;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: background-color 0.1s;
+              
+            }
+              #addstudent-button:hover{
+                background-color: rgba(0, 0, 0, 0.142);
+                color: white;
+              }
+                #addstudent-button:active{
+                  background-color: rgba(255, 255, 255, 0.616);
+                }
+                  #student-summary{
+                    align-items: flex-end;
+                    display: flex;
+                    flex-direction: row;
+                    background-color: rgba(122, 226, 43, 0.217);
+                    height: 50vh;
+                    width: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 15px;
+                    gap: 20px;
+                    box-sizing: border-box;
+                    
+                  }
+                    .studentsummary-box{
+                      align-items: center;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3px;
+                      justify-content: space-between;
+                      height: 30vh;
+                      padding-left: 5px;
+                      padding: 24px;
+                      flex: 1; 
+                      margin-top: 24px;
+                    }
+                      #studentsummary-box1{
+                        background-color: blueviolet;
+                      }
+                        #studentsummary-box2{
+                          background-color: chartreuse;
+                        }
+                          #studentsummary-box3{
+                            background-color: rgb(100, 0, 47);
+                          } 
+                            
+                              #studentsummary-box4{
+                                background-color: pink;
+                              }
+                                .box-p{
+                                  font-size: 15px;
+                                  font-weight:400 ;
+                                  color: white;
+                                }
+                                  .box1-p{
+                                    font-size: 25px;
+                                    font-weight:500 ;
+                                    /* font: bolder; */
+                                    /* padding-right: 20vw; */
+                                  }
+                                  
+                                
+                            
