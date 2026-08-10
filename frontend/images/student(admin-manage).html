@@ -1,48 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="student(admin-manage).css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>students</title>
-</head>
-<body>
-  <main id="main-container">
-    <section>
-          <div id="top-box" class="top-class">
-            <div id="topbox-text">
-                <p id="toptext-1" class="top-text">Students</p>
-                <p id="toptext-2" class="top-text">manage all students in the school</p>
-            </div>
-                <div id="addstu-box" class="top-class">
-                    
-                    <button id="addstudent-button"><span>➕</span>Add student</button>
-                    
-                </div>
+  <head>
+    <link rel="stylesheet" href="student(admin-manage).css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>students</title>
+  </head>
+  <body>
+    <main id="main-container">
+      <section>
+        <div id="top-box" class="top-class">
+          <div id="topbox-text">
+            <p id="toptext-1" class="top-text">Students</p>
+            <p id="toptext-2" class="top-text">
+              Manage all students in the school
+            </p>
           </div>
-                      <div id="student-summary">
-                          <div id="studentsummary-box1" class="studentsummary-box">
-                            <p class="box-p"><span>🧑‍🎓</span>Total number of students</p>
-                            <p class="box1-p">450</p>
-                            <p class="box-p">All registered student</p>
-                          </div>
-                                <div id="studentsummary-box2" class="studentsummary-box">
-                                  <p class="box-p"><span>✅</span>Active students</p>
-                                  <p class="box1-p">430</p>
-                                  <p class="box-p">currently active</p>
-                                </div>
-                                      <div  id="studentsummary-box3" class="studentsummary-box">
-                                          <p class="box-p"><span>⏸️</span>Inctive students</p>
-                                          <p class="box1-p">20</p>
-                                          <p class="box-p">Not active</p>
-                                      </div>
-                                            <div id="studentsummary-box4" class="studentsummary-box">
-                                              <p class="box-p"><span>🆕</span>Newly Admitted this month</p>
-                                              <p class="box1-p">15</p>
-                                              <p class="box-p">Added this month</p>
-                                            </div>
-                      </div>
-    </section>
-  </main>
-</body>
+          <div id="addstu-box" class="top-class">
+            <button type="button" id="addstudent-button">
+              <span>➕</span>Add student
+            </button>
+          </div>
+        </div>
+        <div id="student-summary">
+          <div id="studentsummary-box1" class="studentsummary-box">
+            <p class="box-p"><span>🧑‍🎓</span>Total students</p>
+            <p class="box1-p">450</p>
+            <p class="box-p">All registered student</p>
+          </div>
+          <div id="studentsummary-box2" class="studentsummary-box">
+            <p class="box-p"><span>✅</span>Active students</p>
+            <p class="box1-p">430</p>
+            <p class="box-p">currently active</p>
+          </div>
+          <div id="studentsummary-box3" class="studentsummary-box">
+            <p class="box-p"><span>⏸️</span>Inctive</p>
+            <p class="box1-p">20</p>
+            <p class="box-p">Not active</p>
+          </div>
+          <div id="studentsummary-box4" class="studentsummary-box">
+            <p class="box-p"><span>🆕</span>Newly Admitted</p>
+            <p class="box1-p">15</p>
+            <p class="box-p">Added this month</p>
+          </div>
+        </div>
+        <br />
+        <div id="search-area">
+          <div id="search-box" class="search-c">
+            <input
+              type="search-field"
+              id="search"
+              placeholder="🔍Search by name,ID..."
+            />
+          </div>
+          <div id="class-section" class="search-c">
+            <label>class</label>
+            <select id="class-id">
+              <option>All classes</option>
+              <option>year 1</option>
+              <option>year 2</option>
+              <option>year 3</option>
+            </select>
+          </div>
+          <div id="status" class="search-c">
+            <label>status</label>
+            <select id="status-id">
+              <option>All students</option>
+              <option>Active</option>
+              <option>inactive</option>
+            </select>
+          </div>
+          <div id="clear-filter" class="search-c">
+            <button type="button" id="clearfilter-btn">Clear filter</button>
+          </div>
+        </div>
+        <br />
+        <section class="student-table-container">
+          <table class="student-table">
+            <thead>
+              <tr>
+                <th scope="col">Student ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Class</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>ST001</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Male</td>
+                <td>JHS 2</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>ST002</td>
+                <td>Mary</td>
+                <td>Smith</td>
+                <td>Female</td>
+                <td>JHS 1</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>ST003</td>
+                <td>David</td>
+                <td>Mensah</td>
+                <td>Male</td>
+                <td>JHS 3</td>
+                <td>Inactive</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
