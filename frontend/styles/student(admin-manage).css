@@ -11,6 +11,9 @@
   --text-p: #1e293b;
   --text-s: #64748b;
 
+  --border: #cbd5e1;
+  --border-light: #e2e8f0;
+
   --shadow: rgba(0, 0, 0, 0.08);
 }
 
@@ -28,7 +31,7 @@ body {
 
 #top-box {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   background-color: var(--brand-navy);
 }
 
@@ -45,8 +48,8 @@ body {
 }
 
 #addstu-box {
-  padding-left: 73vw;
-  padding-bottom: 14px;
+  padding-left: 70vw;
+  padding-top: 18px;
 }
 
 #toptext-1 {
@@ -135,8 +138,7 @@ body {
 
 #search-area {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
   gap: 20px;
   width: 100%;
   padding: 20px 25px;
@@ -147,19 +149,22 @@ body {
 .search-c {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 6px;
   flex: 1;
 }
 
-#search-box {
-  padding-bottom: 5px;
+.search-c label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-p);
 }
 
 #search {
   width: 100%;
   height: 40px;
   padding: 0 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 6px;
   background-color: var(--bg-card);
   color: var(--text-p);
@@ -169,17 +174,28 @@ body {
 #search:focus {
   border-color: var(--brand-navy-light);
 }
-#search-area {
-  padding-bottom: 5px;
+
+#class-id,
+#status-id {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--bg-card);
+  color: var(--text-p);
+  outline: none;
 }
-#clear-filter {
-  padding-bottom: 5px;
+
+#class-id:focus,
+#status-id:focus {
+  border-color: var(--brand-navy-light);
 }
 
 #clearfilter-btn {
   width: 100%;
   height: 40px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 6px;
   background-color: var(--bg-card);
   color: var(--text-p);
@@ -194,23 +210,6 @@ body {
 
 #clearfilter-btn:active {
   background-color: var(--brand-navy);
-}
-
-#status-id,
-#class-id {
-  width: 100%;
-  height: 40px;
-  padding: 0 10px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  background-color: var(--bg-card);
-  color: var(--text-p);
-  outline: none;
-}
-
-#status-id:focus,
-#class-id:focus {
-  border-color: var(--brand-navy-light);
 }
 
 .student-table-container {
@@ -244,7 +243,7 @@ body {
   padding: 16px;
   color: var(--text-p);
   font-size: 14px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .student-table tbody tr {
