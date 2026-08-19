@@ -1,0 +1,131 @@
+.bg-container {
+    margin-top: 105px;
+    margin-left: 240px;
+    padding-right: 40px;
+    padding-left: 10px;
+    background-color: var(--bg-main);
+    z-index: 1000;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.boxes {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.card-header {
+    background-color: var(--brand-navy);
+    height: 60%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+
+    color: var(--bg-card);
+}
+
+.card-header  div {
+    display: flex;
+    align-items: center;
+}
+.card-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card-image svg {
+    width: 35px;
+    height: 35px;
+    color: var(--brand-navy);
+}
+
+.card-header span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 10px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.card-text {
+    height: 40%;
+    background-color: var(--bg-card);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    color: var(--brand-navy);
+    color: var(--text-p);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button {
+    background-color: var(--accent-primary);
+    color: var(--brand-navy);
+    padding: 4px 0;
+    padding-left: 5px;
+    font-size: 12px;
+    outline: none;
+    border-radius: 100px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--brand-navy);
+    color: var(--accent-primary);
+}
+
+.button svg {
+    width: 15px;
+    height: auto;
+    margin-left: 3px;
+}
