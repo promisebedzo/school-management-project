@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <link rel="stylesheet" href="./styles/addstudent.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add student</title>
+  </head>
+  <body>
+    <form id="addstudent-forms">
+      <div id="form-container">
+        <div id="heading">
+          <p>Student forms</p>
+        </div>
+        <div>
+          <label for="firstname"  class="form-label">Firstname</label>
+          <input
+            type="text"
+            id="firstname"
+            class="stu-forms"
+            name="firstname"
+            placeholder="Enter firstname eg.Emmanuella"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname"  class="form-label">Lastname</label>
+          <input
+            type="text"
+            id="lastname"
+             class="stu-forms"
+            name="lastname"
+            placeholder="Enter lastname eg.Boakyewaa"
+            required
+          />
+        </div>
+        <div>
+          <label for="othernames"  class="form-label">Othernames</label>
+          <input
+            type="text"
+            id="othernames"
+             class="stu-forms"
+            name="lothernames"
+            placeholder="Enter othernames "
+          />
+        </div>
+        <div>
+          <label for="index" class="form-label">Index Number</label>
+          <input
+            type="text"
+            id="index"
+             class="stu-forms"
+            name="index"
+            placeholder="Enter index eg.stu1234"
+            required
+          />
+        </div>
+       
+        <div >
+          <label for="Year"  class="form-label" >Year</label>
+          <select  class="stu-forms">
+            <option value="">Select year </option>
+            <option value="Year 1">Year 1</option>
+            <option value="Year 2">Year 2</option>
+            <option value="Year 3">Year 3</option>
+          </select>
+        </div>
+        <div>  <label for="course"  class="form-label">Course</label>
+        <select id="course" name="course"  class="stu-forms">
+    <option value="">Select Course</option>
+    <option value="General Science">General Science</option>
+    <option value="General Arts">General Arts</option>
+    <option value="Business ">Business </option>
+    <option value="Home Economics">Home Economics</option>
+</select></div>
+        <div class="form-group">
+    <label id="gen-id"></label>
+         <div class="form-group">
+  <label id="gen-id" class="form-label">Gender</label>
+
+  <div id="gender">
+    <label for="male">
+      <input type="radio" id="male" name="gender" value="Male" />
+      Male
+    </label>
+
+    <label for="female">
+      <input type="radio" id="female" name="gender" value="Female" />
+      Female
+    </label>
+  </div>
+</div>
+        
+
+
+        </div>
+        <!-- <div>
+          <label for="tel"  class="form-label">Tel:</label>
+          <input type="tel" name="tel" id="tel"  class="stu-forms" placeholder="Enter Tel eg:0123456789">
+        </div>
+        <div> -->
+          <!-- <label for="passport"  class="form-label">Passport Picture</label>
+<input type="file" id="passport"  class="stu-forms" name="passport" accept="image/*">
+
+<img id="passport-preview" src="" alt="Passport Preview">
+        </div> -->
+        
+        <div id="btn-container">
+          <button id="submit-btn"  class="forms-btn" type="button">Add Student</button><br><br>
+                    <button id="clear-btn"  class="forms-btn" type="button">Clear</button>
+        </div>
+    </form>
+  </body>
+</html>
