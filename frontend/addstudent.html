@@ -7,35 +7,35 @@
     <title>Add student</title>
   </head>
   <body>
-    <form>
-      <div id="main-container">
+    <form id="addstudent-forms">
+      <div id="form-container">
         <div id="heading">
           <p>Student forms</p>
         </div>
         <div>
-          <label for="firstname"  class="form-label">Firstname:</label>
+          <label for="firstname"  class="form-label">Firstname</label>
           <input
             type="text"
             id="firstname"
             class="stu-forms"
             name="firstname"
-            placeholder="Enter firstname eg.John"
+            placeholder="Enter firstname eg.Emmanuella"
             required
           />
         </div>
         <div>
-          <label for="lastname"  class="form-label">Lastname:</label>
+          <label for="lastname"  class="form-label">Lastname</label>
           <input
             type="text"
             id="lastname"
              class="stu-forms"
             name="lastname"
-            placeholder="Enter lastname eg.Doe"
+            placeholder="Enter lastname eg.Boakyewaa"
             required
           />
         </div>
-        <!-- <div>
-          <label for="othernames"  class="form-label">Othernames:</label>
+        <div>
+          <label for="othernames"  class="form-label">Othernames</label>
           <input
             type="text"
             id="othernames"
@@ -43,9 +43,9 @@
             name="lothernames"
             placeholder="Enter othernames "
           />
-        </div> -->
+        </div>
         <div>
-          <label for="index" class="form-label">Index:</label>
+          <label for="index" class="form-label">Index Number</label>
           <input
             type="text"
             id="index"
@@ -57,7 +57,7 @@
         </div>
        
         <div >
-          <label for="Year"  class="form-label" >Year:</label>
+          <label for="Year"  class="form-label" >Year</label>
           <select  class="stu-forms">
             <option value="">Select year </option>
             <option value="Year 1">Year 1</option>
@@ -65,22 +65,35 @@
             <option value="Year 3">Year 3</option>
           </select>
         </div>
-         <div id="gender"><label class="stu-forms"  class="form-label">
-            <input type="radio" id="male" name="gender"  value="MAle" />
-            Male</label>
-           <input type="radio" id="female" name="gender"  value="Female" />
-            Female</label></div>
-        <!-- <div>
-          <label for="course"  class="form-label">Course:</label>
-
-<select id="course" name="course"  class="stu-forms">
+        <div>  <label for="course"  class="form-label">Course</label>
+        <select id="course" name="course"  class="stu-forms">
     <option value="">Select Course</option>
-    <option value="Computer Science">Computer Science</option>
-    <option value="Information Technology">Information Technology</option>
-    <option value="Business Administration">Business Administration</option>
-    <option value="Accounting">Accounting</option>
-</select>
-        </div> -->
+    <option value="General Science">General Science</option>
+    <option value="General Arts">General Arts</option>
+    <option value="Business ">Business </option>
+    <option value="Home Economics">Home Economics</option>
+</select></div>
+        <div class="form-group">
+    <label id="gen-id"></label>
+         <div class="form-group">
+  <label id="gen-id" class="form-label">Gender</label>
+
+  <div id="gender">
+    <label for="male">
+      <input type="radio" id="male" name="gender" value="Male" />
+      Male
+    </label>
+
+    <label for="female">
+      <input type="radio" id="female" name="gender" value="Female" />
+      Female
+    </label>
+  </div>
+</div>
+        
+
+
+        </div>
         <!-- <div>
           <label for="tel"  class="form-label">Tel:</label>
           <input type="tel" name="tel" id="tel"  class="stu-forms" placeholder="Enter Tel eg:0123456789">
@@ -93,7 +106,7 @@
         </div> -->
         
         <div id="btn-container">
-          <button id="submit-btn"  class="forms-btn" type="button">Submit</button><br><br>
+          <button id="submit-btn"  class="forms-btn" type="button">Add Student</button><br><br>
                     <button id="clear-btn"  class="forms-btn" type="button">Clear</button>
         </div>
     </form>

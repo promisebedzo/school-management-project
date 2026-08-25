@@ -1,63 +1,208 @@
-body{
-  background-color: blueviolet;
+:root {
+  --bg-main: #f4f6f8;
+  --bg-card: #ffffff;
+
+  --brand-navy: #192255;
+  --brand-navy-light: #232d68;
+
+  --accent-primary: #ffb800;
+  --accent-dark: #e8af00;
+
+  --text-p: #1e293b;
+  --text-s: #64748b;
+
+  --border: #cbd5e1;
+  --border-light: #e2e8f0;
+
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
-  align-items: center;
-  height: 100vh;
   width: 100%;
+  min-height: 120vh;
+  background-color: var(--bg-main);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
-#main-container{
-  background-color: aqua;
-  width: 90%;
+
+#form-container {
+  width: 100%;
+  max-width: 700px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--brand-navy-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
+  /* display: none; */
+}
+
+#heading {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--bg-card);
+}
+
+#heading p {
+  margin: 0;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  padding: 40px;
-  gap: 7px;
-  padding-bottom: 10px;  
-  border-radius: 10px;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  box-shadow: 0 4px 12px
+  gap: 6px;
+  width: 100%;
 }
-#heading{
- font-size: 30px;
- font-weight: 600;
-}
-.stu-forms{
-  gap: 50px;
-  height: 8vh;
-  width: 30vw;
-  padding: 10px;
-  border: none;
- border-radius: 2px;
 
-}
 .form-label {
   display: block;
-  margin-bottom: 6px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
+  color: var(--bg-card);
+}
+
+.stu-forms {
+  width: 100%;
+  height: 45px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  color: var(--text-p);
+  font-family: inherit;
+  font-size: 15px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.stu-forms:hover {
+  background-color: #f8fafc;
+}
+
+.stu-forms:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(255, 184, 0, 0.15);
+}
+
+#gender {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+#gender label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--bg-card);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#gender input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: var(--accent-primary);
+}
+
+#btn-container {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.forms-btn {
+  flex: 1;
+  height: 44px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+#submit-btn {
+  border: none;
+  background-color: var(--accent-primary);
+  color: var(--brand-navy);
+}
+
+#submit-btn:hover {
+  background-color: var(--accent-dark);
+}
+
+#submit-btn:active {
+  transform: translateY(1px);
+}
+
+#clear-btn {
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
   color: var(--text-p);
 }
-#male,#female{
-  padding: 10px;
 
+#clear-btn:hover {
+  background-color: #e2e8f0;
 }
-.gen{
-  gap: 50px;
+
+#clear-btn:active {
+  transform: translateY(1px);
+}
+
+input[type="file"] {
+  width: 100%;
   padding: 10px;
- 
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  color: var(--text-p);
+  font-family: inherit;
 }
-#btn-container{
-  padding-bottom:
+
+input::placeholder {
+  color: var(--text-s);
 }
-.forms-btn{
-  height: 20px;
+
+select {
+  cursor: pointer;
 }
-#gender{
-  padding-bottom: 20px;
+
+@media (max-width: 600px) {
+  #form-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #heading {
+    font-size: 25px;
+  }
+
+  #btn-container {
+    flex-direction: column;
+  }
+
+  .forms-btn {
+    width: 100%;
+  }
 }

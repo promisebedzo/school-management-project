@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<<<<<<< Updated upstream:frontend/images/student(admin-manage).html
+    <link rel="stylesheet" href="student(admin-manage).css" />
+=======
+    <link rel="stylesheet" href="styles/student(admin-manage).css" />
+    <link rel="stylesheet" href="./styles/addstudent.css" />
+>>>>>>> Stashed changes:frontend/student(admin-manage).html
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>students</title>
+  </head>
+  <body>
+    <main id="adminaccess-student">
+      <section>
+        <div id="top-box" class="top-class">
+          <div id="topbox-text">
+            <p id="toptext-1" class="top-text">Students</p>
+            <p id="toptext-2" class="top-text">
+              Manage all students in the school
+            </p>
+          </div>
+          <div id="addstu-box" class="top-class">
+            <button type="button" id="addstudent-button">
+              <span>➕</span>Add student
+            </button>
+          </div>
+        </div>
+        <div id="student-summary">
+          <div id="studentsummary-box1" class="studentsummary-box">
+            <p class="box-p"><span>🧑‍🎓</span>Total students</p>
+            <p class="box1-p">450</p>
+            <p class="box-p">All registered student</p>
+          </div>
+          <div id="studentsummary-box2" class="studentsummary-box">
+            <p class="box-p"><span>✅</span>Active students</p>
+            <p class="box1-p">430</p>
+            <p class="box-p">currently active</p>
+          </div>
+          <div id="studentsummary-box3" class="studentsummary-box">
+            <p class="box-p"><span>⏸️</span>Inctive</p>
+            <p class="box1-p">20</p>
+            <p class="box-p">Not active</p>
+          </div>
+          <div id="studentsummary-box4" class="studentsummary-box">
+            <p class="box-p"><span>🆕</span>Newly Admitted</p>
+            <p class="box1-p">15</p>
+            <p class="box-p">Added this month</p>
+          </div>
+        </div>
+        <br />
+        <div id="search-area">
+          <div id="search-box" class="search-c">
+            <input
+              type="search-field"
+              id="search"
+              placeholder="🔍Search by name,ID..."
+            />
+          </div>
+          <div id="class-section" class="search-c">
+            <label>class</label>
+            <select id="class-id">
+              <option>All classes</option>
+              <option>year 1</option>
+              <option>year 2</option>
+              <option>year 3</option>
+            </select>
+          </div>
+          <div id="status" class="search-c">
+            <label>status</label>
+            <select id="status-id">
+              <option>All students</option>
+              <option>Active</option>
+              <option>inactive</option>
+            </select>
+          </div>
+          <div id="clear-filter" class="search-c">
+            <button type="button" id="clearfilter-btn">Clear filter</button>
+          </div>
+        </div>
+        <br />
+        <section class="student-table-container">
+          <table class="student-table">
+            <thead>
+              <tr>
+                <th scope="col">Student ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Class</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>ST001</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Male</td>
+                <td>JHS 2</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>ST002</td>
+                <td>Mary</td>
+                <td>Smith</td>
+                <td>Female</td>
+                <td>JHS 1</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>ST003</td>
+                <td>David</td>
+                <td>Mensah</td>
+                <td>Male</td>
+                <td>JHS 3</td>
+                <td>Inactive</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+     
+    </main>
+    <!-- A SECTION TO CONTAIN THE HTML CODES FOR THE FORM IN THE DASHBOARD -->
+      <form id="addstudent-forms">
+      <div id="form-container">
+        <div id="heading">
+          <p>Student forms</p>
+        </div>
+        <div>
+          <label for="firstname"  class="form-label">Firstname</label>
+          <input
+            type="text"
+            id="firstname"
+            class="stu-forms"
+            name="firstname"
+            placeholder="Enter firstname eg.Emmanuella"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname"  class="form-label">Lastname</label>
+          <input
+            type="text"
+            id="lastname"
+             class="stu-forms"
+            name="lastname"
+            placeholder="Enter lastname eg.Boakyewaa"
+            required
+          />
+        </div>
+        <div>
+          <label for="othernames"  class="form-label">Othernames</label>
+          <input
+            type="text"
+            id="othernames"
+             class="stu-forms"
+            name="othernames"
+            placeholder="Enter othernames "
+          />
+        </div>
+        <div>
+          <label for="index" class="form-label">Index Number</label>
+          <input
+            type="text"
+            id="index"
+             class="stu-forms"
+            name="index"
+            placeholder="Enter index eg.stu1234"
+            required
+          />
+        </div>
+       
+        <div >
+          <label for="Year"  class="form-label" >Year</label>
+          <select  class="stu-forms">
+            <option value="">Select year </option>
+            <option value="Year 1">Year 1</option>
+            <option value="Year 2">Year 2</option>
+            <option value="Year 3">Year 3</option>
+          </select>
+        </div>
+        <div>  <label for="course"  class="form-label">Course</label>
+        <select id="course" name="course"  class="stu-forms">
+    <option value="">Select Course</option>
+    <option value="General Science">General Science</option>
+    <option value="Genearal Arts">General Arts</option>
+    <option value="Business">Business</option>
+    <option value="Home Economics">Home Economics</option>
+</select></div>
+        <div class="form-group">
+    <label id="gen-id"></label>
+         <div class="form-group">
+  <label id="gen-id" class="form-label">Gender</label>
+
+  <div id="gender">
+    <label for="male">
+      <input type="radio" id="male" name="gender" value="Male" />
+      Male
+    </label>
+
+    <label for="female">
+      <input type="radio" id="female" name="gender" value="Female" />
+      Female
+    </label>
+  </div>
+</div>
+        
+
+
+        </div>
+        <!-- <div>
+          <label for="tel"  class="form-label">Tel:</label>
+          <input type="tel" name="tel" id="tel"  class="stu-forms" placeholder="Enter Tel eg:0123456789">
+        </div>
+        <div> -->
+          <!-- <label for="passport"  class="form-label">Passport Picture</label>
+<input type="file" id="passport"  class="stu-forms" name="passport" accept="image/*">
+
+<img id="passport-preview" src="" alt="Passport Preview">
+        </div> -->
+        
+        <div id="btn-container">
+          <button id="submit-btn"  class="forms-btn" type="button">Add Student</button><br><br>
+                    <button id="clear-btn"  class="forms-btn" type="button">Clear</button>
+        </div>
+    </form>
+    <script  < script src="./js/adminaccess/manage-student.js"></script>></script>
+  </body>
+</html>
