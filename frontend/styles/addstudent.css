@@ -1,0 +1,63 @@
+body{
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+#main-container{
+  background-color: aqua;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+  gap: 7px;
+  padding-bottom: 10px;  
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0 4px 12px
+}
+#heading{
+ font-size: 30px;
+ font-weight: 600;
+}
+.stu-forms{
+  gap: 50px;
+  height: 8vh;
+  width: 30vw;
+  padding: 10px;
+  border: none;
+ border-radius: 2px;
+
+}
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-p);
+}
+#male,#female{
+  padding: 10px;
+
+}
+.gen{
+  gap: 50px;
+  padding: 10px;
+ 
+}
+#btn-container{
+  padding-bottom:
+}
+.forms-btn{
+  height: 20px;
+}
+#gender{
+  padding-bottom: 20px;
+}
