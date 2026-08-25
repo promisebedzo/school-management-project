@@ -1,0 +1,200 @@
+.dashboard-container {
+    background-color: var(--bg-main);
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: var(--brand-navy);
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100vh;
+    padding: 0 10px;
+    z-index: 100;
+
+}
+
+.sch-badge img {
+    width: 200px;
+    align-self: center;
+}
+
+.line {
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: var(--brand-navy-light);
+}
+
+.navbar {
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+}
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navbar ul, a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--bg-card);
+    font-size: large;
+    display: block;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar ul a:hover {
+    background-color: var(--brand-navy-light);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg-card);
+    height: 100px;
+    padding-right: 48px;
+    margin-left: 240px;
+    box-shadow: var(--shadow);
+} 
+
+.school-details {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.school-name {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--text-p);
+    margin-bottom: 5px;
+}
+
+.motto-container {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.details {
+    font-size: 18px;
+    color: var(--text-s);
+}
+
+.search-bar-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 400px;
+    min-width: 0;
+    margin: 0 20px;
+}
+
+.search-bar {
+    height: 40px;
+    flex: 1;
+    align-items: center;
+    min-width: 0;
+    max-width: 400px;
+    padding: 0 18px;
+    border: 1px solid var(--brand-navy-light);
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 16px;
+    color: var(--text-p);
+    background-color: var(--bg-main);
+}
+
+.search-bar::placeholder {
+    color: var(--text-s);
+}
+
+.search-bar:focus {
+    border: 2px solid var(--brand-navy-light);
+}
+
+.search-button {
+    background-color: var(--brand-navy);
+    width: 48px;
+    height: 40px;
+    border: none;
+    flex-shrink: 0;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 7px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: var(--brand-navy-light);
+}
+
+.search-image {
+    height: 25px;
+    margin-left: 2px;
+    margin-top: 7px;
+}
+
+.student-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.student-image-container {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.student-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--brand-navy-light);
+    margin-left: 24px;
+}
+
+.student-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name {
+    font-size:20px ;
+    font-weight: 700;
+    color: var(--text-p);
+    margin-bottom: 4px;
+}
+
+.course {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 16px;
+    max-width: 180px;
+    border-radius: 100px;
+    background-color: var(--accent-primary);
+    color: var(--brand-navy);
+    text-align: center;
+    align-self: center;
+}

@@ -11,7 +11,7 @@
     --text-p: #1E293B;
     --text-s: #64748B;
 
-    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow: 0 10px 25px  -5px rgba(0, 0, 0, 0.08);
 }
 
 * {
