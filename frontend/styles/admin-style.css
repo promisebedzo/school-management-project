@@ -9,8 +9,7 @@
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 100vh;
-    padding: 0 10px;
+    height: 100%;
     z-index: 100;
 
 }
@@ -47,7 +46,7 @@
     color: var(--bg-card);
     font-size: large;
     display: block;
-    padding: 10px 0;
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 .bg-container {
     margin-top: 105px;
     margin-left: 240px;
-    padding-right: 40px;
+    padding-right: var(--edge);
     padding-left: 10px;
     background-color: var(--bg-main);
     z-index: 1000;
@@ -128,4 +128,126 @@
     width: 15px;
     height: auto;
     margin-left: 3px;
+}
+
+/* Analysis */
+
+.analysis {
+    margin-top: 30px;
+    margin-left: 240px;
+    padding-left: 10px;
+    padding-right: var(--edge);
+    background-color: var(--bg-main);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.graph {
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--bg-card);
+    box-shadow: var(--shadow);
+    border-top: 8px solid var(--accent-primary);
+}
+
+.chat-title {
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--text-p);
+
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+/* Dashboard footer */
+
+.dashboard-footer {
+    margin-left: 240px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: var(--edge);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+
+}
+
+.quick-actions,
+.system-alerts,
+.deadlines {
+    background-color: var(--bg-card);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.actions-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-p);
+}
+
+.actions-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.actions-buttons button {
+    background-color: var(--bg-main);
+    border: 1px solid var(--border);
+    color: var(--text-p);
+    padding: 6px 3px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.actions-buttons button:hover {
+    background-color: var(--brand-navy);
+    color: var(--bg-card);
+}
+
+.actions-buttons button:active {
+    transform: scale(0.96);
+}
+
+.alerts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.alerts p {
+    color: var(--text-s);
+}
+
+.deadline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.deadline div {
+    color: var(--text-s);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.deadline div p:first-child {
+    color: var(--text-p);
+    font-weight: bold;
 }
