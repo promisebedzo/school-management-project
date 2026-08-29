@@ -1,6 +1,8 @@
 :root {
     --bg-main: #F4F6F8;
     --bg-card: #FFFFFF;
+    --placeholder: #EAECEF;
+    --border: #D1D5DB;
 
     --brand-navy: #192255;
     --brand-navy-light: #232D68;
@@ -12,6 +14,9 @@
     --text-s: #64748B;
 
     --shadow: 0 10px 25px  -5px rgba(0, 0, 0, 0.08);
+
+    /* Edge padding */
+    --edge: 30px;
 }
 
 * {
@@ -21,5 +26,6 @@
 }
 
 body{
-    min-height: 100vh;
+    background-color: var(--bg-main);
+    padding-bottom: 30px;
 }

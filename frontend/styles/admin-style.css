@@ -1,16 +1,15 @@
 .dashboard-container {
     background-color: var(--bg-main);
-    min-height: 100vh;
 }
 
 .sidebar {
     position: fixed;
+    top: 0;
     background-color: var(--brand-navy);
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 100vh;
-    padding: 0 10px;
+    height: 100%;
     z-index: 100;
 
 }
@@ -47,7 +46,7 @@
     color: var(--bg-card);
     font-size: large;
     display: block;
-    padding: 10px 0;
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +57,15 @@
     background-color: var(--brand-navy-light);
 }
 
+.active {
+    background-color: var(--brand-navy-light);
+}
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -198,3 +205,8 @@
     text-align: center;
     align-self: center;
 }
+
+/** {
+    outline: 1px solid red !important;
+}
+
