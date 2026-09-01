@@ -60,11 +60,15 @@
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    transition: all 0.1s ease;
 }
 
 .login-button:hover {
-
     background-color: var(--accent-primary);
+}
+
+.login-button:active {
+    background-color: var(--brand-navy);
 }
 
 .input-box input:focus {
