@@ -24,7 +24,7 @@
 body {
 margin: 0;
 width: 100%;
-min-height: 120vh;
+min-height: 100vh;
 background-color: var(--bg-main);
 font-family: "Inter", sans-serif;
 }
@@ -49,6 +49,21 @@ flex-direction: column;
 justify-content: center;
 padding-left: 0;
 }
+.container {
+  margin-top: 0;
+  /* margin-left: 240px; */
+  background-color: var(--bg-main);
+  z-index: 1000;
+}
+
+#top-box {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--brand-navy);
+  padding: 0 10px;
+}
 
 #toptext-1 {
 margin: 0 0 5px 0;
@@ -71,11 +86,19 @@ margin-left: auto;
 }
 
 #addstudent-button {
+
 display: flex;
 align-items: center;
 justify-content: center;
 gap: 7px;
 width: 150px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 7px;
+width: 150px;
+
 height: 50px;
 border: none;
 border-radius: 8px;
@@ -85,6 +108,17 @@ font-size: 14px;
 font-weight: 600;
 cursor: pointer;
 transition: background-color 0.2s ease;
+
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-primary);
+  color: var(--brand-navy);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
 }
 
 #addstudent-button:hover {
@@ -96,6 +130,7 @@ background-color: var(--accent-primary);
 }
 
 #student-summary {
+
 display: flex;
 align-items: stretch;
 justify-content: space-between;
@@ -104,6 +139,16 @@ width: 100%;
 min-height: 250px;
 padding: 25px;
 background-color: var(--bg-main);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 250px;
+  padding: 0 20px;
+  background-color: var(--bg-main);
+
 }
 
 .studentsummary-box {
