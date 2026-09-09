@@ -1,55 +1,17 @@
-:root {
-  --bg-main: #f4f6f8;
-  --bg-card: #ffffff;
-
-  --brand-navy: #192255;
-  --brand-navy-light: #232d68;
-
-  --accent-primary: #ffb800;
-  --accent-dark: #e8af00;
-
-  --text-p: #1e293b;
-  --text-s: #64748b;
-
-  --border: #cbd5e1;
-  --border-light: #e2e8f0;
-
-  --shadow: rgba(0, 0, 0, 0.08);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
+.container {
+  margin-top: 100px;
+  margin-left: 240px;
   background-color: var(--bg-main);
-  font-family: "Inter", sans-serif;
-  width: 100%;
-  min-height: 120vh;
-  margin: 0;
+  z-index: 1000;
 }
 
 #top-box {
-  display: flex;
-  align-items: center;
-  background-color: var(--brand-navy);
-}
-
-.top-class {
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-}
-
-#topbox-text {
-  padding-left: 20px;
-}
-
-#addstu-box {
-  padding-left: 70vw;
-  padding-top: 18px;
+  background-color: var(--brand-navy);
+  padding: 0 10px;
 }
 
 #toptext-1 {
@@ -65,7 +27,7 @@ body {
 }
 
 #addstudent-button {
-  width: 15vw;
+  width: 200px;
   height: 50px;
   border: none;
   border-radius: 8px;
@@ -91,7 +53,7 @@ body {
   gap: 20px;
   width: 100%;
   min-height: 250px;
-  padding: 25px;
+  padding: 0 20px;
   background-color: var(--bg-main);
 }
 
