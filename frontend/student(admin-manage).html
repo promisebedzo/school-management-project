@@ -1,179 +1,232 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/admin-style.css">
+    <link rel="stylesheet" href="styles/student(admin-manage).css" />
 
-<link rel="stylesheet" href="styles/student(admin-manage).css" />
-
-<title>Students</title>
-
+    <title>Students</title>
   </head>
 
   <body>
     <main id="main-container">
 
+      <section class="sidebar">
+        <div class="sch-badge">
+          <img src="images/school-logo.png" alt="School Badge">
+        </div>
 
-  <section>
+        <hr class="line">
 
-    <!-- TOP HEADER -->
-    <div id="top-box">
+        <div class="navbar">
+          <ul>
+            <li><a href="#" class="nav-items">Dashboard</a></li>
+            <li><a href="#" class="nav-items active">Staffs</a></li>
+            <li><a href="#" class="nav-items">Students</a></li>
+            <li><a href="#" class="nav-items">Courses</a></li>
+            <li><a href="#" class="nav-items">Class</a></li>
+            <li><a href="#" class="nav-items">Results</a></li>
+            <li><a href="#" class="nav-items">Fees</a></li>
+            <li><a href="#" class="nav-items">Anoucements</a></li>
+          </ul>
+        </div>
+      </section>
 
-      <div id="topbox-text">
-        <p id="toptext-1">Students</p>
-        <p id="toptext-2">Manage all students in the school</p>
-      </div>
+      <section class="header">
+        <div class="school-details">
+          <div class="details-container">
+            <div class="school-name">Bright Future Academy</div>
 
-      <div id="addstu-box">
-        <button type="button" id="addstudent-button">
-          <span>➕</span>
-          Add student
-        </button>
-      </div>
+            <div class="motto-container">
+              <span class="details">Discipline</span>
+              <span class="indicator">&bull;</span>
+              <span class="details">Knowledge</span>
+              <span class="indicator">&bull;</span>
+              <span class="details">Character</span>
+            </div>
+          </div>
+        </div>
 
-    </div>
+        <div class="search-bar-container">
+          <input type="text" placeholder="search" class="search-bar">
 
+          <button class="search-button">
+            <img src="images/search-icon.png" alt="" class="search-image">
+          </button>
+        </div>
 
-    <!-- STUDENT SUMMARY -->
-    <div id="student-summary">
+        <div class="student-container">
+          <div class="student-image-container">
+            <img src="images/app.png" alt="Profile Picture">
+          </div>
 
-      <div id="studentsummary-box1" class="studentsummary-box">
-        <p class="box-p"><span>🧑‍🎓</span> Total students</p>
-        <p class="box1-p">450</p>
-        <p class="box-p">All registered students</p>
-      </div>
+          <div class="student-details">
+            <div class="student-name">
+              Joshua Kwame Arthur
+            </div>
 
-      <div id="studentsummary-box2" class="studentsummary-box">
-        <p class="box-p"><span>✅</span> Active students</p>
-        <p class="box1-p">430</p>
-        <p class="box-p">Currently active</p>
-      </div>
+            <div class="course">Admin</div>
+          </div>
+        </div>
+      </section>
 
-      <div id="studentsummary-box3" class="studentsummary-box">
-        <p class="box-p"><span>⏸️</span> Inactive</p>
-        <p class="box1-p">20</p>
-        <p class="box-p">Not active</p>
-      </div>
+      <section class="container">
 
-      <div id="studentsummary-box4" class="studentsummary-box">
-        <p class="box-p"><span>🆕</span> Newly admitted</p>
-        <p class="box1-p">15</p>
-        <p class="box-p">Added this month</p>
-      </div>
+        <div id="top-box" class="top-class">
+          <div id="topbox-text">
+            <p id="toptext-1" class="top-text">Students</p>
+            <p id="toptext-2" class="top-text">
+              Manage all students in the school
+            </p>
+          </div>
 
-    </div>
+          <div id="addstu-box">
+            <button type="button" id="addstudent-button">
+              <span>➕</span>
+              Add student
+            </button>
+          </div>
+        </div>
 
+        <div id="student-summary">
 
-    <!-- SEARCH AND FILTERS -->
-    <div id="search-area">
+          <div id="studentsummary-box1" class="studentsummary-box">
+            <p class="box-p"><span>🧑‍🎓</span> Total students</p>
+            <p class="box1-p">450</p>
+            <p class="box-p">All registered students</p>
+          </div>
 
-      <div id="search-box" class="search-c">
-        <input
-          type="search"
-          id="search"
-          placeholder="🔍 Search by name, ID..."
-        />
-      </div>
+          <div id="studentsummary-box2" class="studentsummary-box">
+            <p class="box-p"><span>✅</span> Active students</p>
+            <p class="box1-p">430</p>
+            <p class="box-p">Currently active</p>
+          </div>
 
-      <div id="class-section" class="search-c">
-        <label for="class-id">Class</label>
+          <div id="studentsummary-box3" class="studentsummary-box">
+            <p class="box-p"><span>⏸️</span> Inactive</p>
+            <p class="box1-p">20</p>
+            <p class="box-p">Not active</p>
+          </div>
 
-        <select id="class-id">
-          <option>All classes</option>
-          <option>Year 1</option>
-          <option>Year 2</option>
-          <option>Year 3</option>
-        </select>
-      </div>
+          <div id="studentsummary-box4" class="studentsummary-box">
+            <p class="box-p"><span>🆕</span> Newly admitted</p>
+            <p class="box1-p">15</p>
+            <p class="box-p">Added this month</p>
+          </div>
 
-      <div id="status" class="search-c">
-        <label for="status-id">Status</label>
+        </div>
 
-        <select id="status-id">
-          <option>All students</option>
-          <option>Active</option>
-          <option>Inactive</option>
-        </select>
-      </div>
+        <br>
 
-      <div id="clear-filter" class="search-c">
-        <button type="button" id="clearfilter-btn">
-          Clear filter
-        </button>
-      </div>
+        <div id="search-area">
 
-    </div>
+          <div id="search-box" class="search-c">
+            <input
+              type="search"
+              id="search"
+              placeholder="🔍 Search by name, ID..."
+            />
+          </div>
 
+          <div id="class-section" class="search-c">
+            <label for="class-id">Class</label>
 
-    <!-- STUDENT TABLE -->
-    <section class="student-table-container">
+            <select id="class-id">
+              <option>All classes</option>
+              <option>Year 1</option>
+              <option>Year 2</option>
+              <option>Year 3</option>
+            </select>
+          </div>
 
-      <table class="student-table">
+          <div id="status" class="search-c">
+            <label for="status-id">Status</label>
 
-        <thead>
-          <tr>
-            <th scope="col">Student ID</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Class</th>
-            <th scope="col">Status</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
+            <select id="status-id">
+              <option>All students</option>
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </div>
 
-        <tbody>
+          <div id="clear-filter" class="search-c">
+            <button type="button" id="clearfilter-btn">
+              Clear filter
+            </button>
+          </div>
 
-          <tr>
-            <td>ST001</td>
-            <td>John</td>
-            <td>Doe</td>
-            <td>Male</td>
-            <td>JHS 2</td>
-            <td>Active</td>
-            <td>
-              <button type="button">View</button>
-            </td>
-          </tr>
+        </div>
 
-          <tr>
-            <td>ST002</td>
-            <td>Mary</td>
-            <td>Smith</td>
-            <td>Female</td>
-            <td>JHS 1</td>
-            <td>Active</td>
-            <td>
-              <button type="button">View</button>
-            </td>
-          </tr>
+        <br>
 
-          <tr>
-            <td>ST003</td>
-            <td>David</td>
-            <td>Mensah</td>
-            <td>Male</td>
-            <td>JHS 3</td>
-            <td>Inactive</td>
-            <td>
-              <button type="button">View</button>
-            </td>
-          </tr>
+        <section class="student-table-container">
 
-        </tbody>
+          <table class="student-table">
 
-      </table>
+            <thead>
+              <tr>
+                <th scope="col">Student ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Class</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
 
-    </section>
+            <tbody>
 
-  </section>
+              <tr>
+                <td>ST001</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Male</td>
+                <td>JHS 2</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
 
-</main>
+              <tr>
+                <td>ST002</td>
+                <td>Mary</td>
+                <td>Smith</td>
+                <td>Female</td>
+                <td>JHS 1</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
 
-<script src="./js/adminaccess/manage-student.js"></script>
+              <tr>
+                <td>ST003</td>
+                <td>David</td>
+                <td>Mensah</td>
+                <td>Male</td>
+                <td>JHS 3</td>
+                <td>Inactive</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
 
+            </tbody>
+
+          </table>
+
+        </section>
+
+      </section>
+
+    </main>
+
+    <script src="./js/adminaccess/manage-student.js"></script>
 
   </body>
 </html>
