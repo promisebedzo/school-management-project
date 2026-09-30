@@ -74,6 +74,7 @@
     padding-right: 48px;
     margin-left: 240px;
     box-shadow: var(--shadow);
+    z-index: 1000;
 } 
 
 .school-details {
